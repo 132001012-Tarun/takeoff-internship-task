@@ -11,6 +11,7 @@ import (
 	"unicode"
 
 	"github.com/gorilla/mux"
+	"golang.org/x/crypto/bcrypt"
 )
 
 // Implementing User interface for Employee
@@ -76,6 +77,13 @@ func addEmployeeHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(newEmployee.Password), bcrypt.DefaultCost)
+	if err != nil {
+		http.Error(w, "Failed to read request body", http.StatusBadRequest)
+		return
+	}
+
+	newEmployee.Password = string(hashedPassword)
 
 	// Generate a new ID for the employee
 	newEmployee.ID = generateNewEmployeeID()
@@ -185,17 +193,22 @@ func updateEmployeeHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Invalid date of birth", http.StatusBadRequest)
 		return
 	}
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(updatedEmployee.Password), bcrypt.DefaultCost)
+	if err != nil {
+		http.Error(w, "Failed to read request body", http.StatusBadRequest)
+		return
+	}
 
 	// Update the employee data
 	employees[index].Username = updatedEmployee.Username
-	employees[index].Password = updatedEmployee.Password
+	employees[index].Password = string(hashedPassword)
 	employees[index].Role = updatedEmployee.Role
 	employees[index].Name = updatedEmployee.Name
 	employees[index].Email = updatedEmployee.Email
 	employees[index].Phone = updatedEmployee.Phone
 	employees[index].Birthdate = updatedEmployee.Birthdate
 
-	err = saveEmployeesToCSV("employees.csv", employees)
+	err = saveEmployeesToCSV("employees.csv", employees) // save it to the employee.csv file
 	if err != nil {
 		http.Error(w, "Error saving employees", http.StatusInternalServerError)
 		return
@@ -283,7 +296,7 @@ func isValidPhoneNumber(phoneNumber string) bool {
 }
 func isValidName(name string) bool {
 	for _, char := range name {
-		if !unicode.IsLetter(char) && !unicode.IsSpace(char) {
+		if !unicode.IsLetter(char) && !unicode.IsSpace(char) { // check wheather if a letter is not char
 			return false
 		}
 	}
