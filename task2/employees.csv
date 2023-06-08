@@ -1,0 +1,7 @@
+ID,Username,Password,Role,Name,Email,Phone,Birthdate
+1,admin,adminpass,admin,Admin User,admin@example.com,1234567890,1990-01-01
+2,manager,managerpass,manager,Manager User,manager@example.com,9876543210,1995-02-01
+3,developer,developerpass,developer,Developer User,developer@example.com,5678901234,1993-03-01
+4,tester,testerpass,tester,Tester User,tester@example.com,4321098765,1998-05-01
+5,Varun,testerpass,tester,Tester User,tester@example.com,4321098765,1998-05-01
+6,Tarun,testerpass,tester,123 User,tester@example.com,4321098765,1998-05-01
