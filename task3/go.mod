@@ -1,4 +1,4 @@
-module example.com/cloudfunction
+module github.com/132001012-Tarun/takeoff-internship-task/tree/main/task3
 
 go 1.20
 
