@@ -1,0 +1,152 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Employee Management API",
+
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:8080"
+      }
+    ],
+    "paths": {
+      "/employees": {
+        "get": {
+          "summary": "Retrieve all employees",
+          "operationId": "getAllEmployees",
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Employee"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Add a new employee",
+          "operationId": "addEmployee",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Employee"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Employee created successfully",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Employee"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/employees/{id}": {
+        "get": {
+          "summary": "Retrieve an employee by ID",
+          "operationId": "getEmployeeById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "Employee ID",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Employee"
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Employee not found"
+            }
+          }
+        },
+        "delete": {
+          "summary": "Delete an employee by ID",
+          "operationId": "deleteEmployeeById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "Employee ID",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Employee deleted successfully"
+            },
+            "404": {
+              "description": "Employee not found"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Employee": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+          
+        }
+      }
+    }
+  }
