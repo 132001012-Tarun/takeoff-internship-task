@@ -1,0 +1,8 @@
+ID,Username,Password,Role,Name,Email,Phone,Birthdate
+1,admin,adminpass,admin,Admin User,admin@example.com,1234567890,1990-01-01
+4,tester,testerpass,tester,Tester User,tester@example.com,4321098765,1998-05-01
+5,Varun,testerpass,tester,Tester User,tester@example.com,4321098765,1998-05-01
+6,Tarun,testerpass,tester,123 User,tester@example.com,4321098765,1998-05-01
+7,Manoj,$2a$10$ORhMDnE4OUuNpYGJ8nFtTeAowVMGRRBkU/BFaV7M2ZnGhrVNmAZtK,tester,Admin User,tester@example.com,4321098765,1998-05-01
+8,man,$2a$10$rCoSVwss6Smcc5Dy.hAoYu7Spya7QoUsZVIJ935J0SIbPvQ8Q5Rhe,manager," User",manager@example.com,9876543210,1995-02-01
+9,ma,$2a$10$xKscyLMnHKz.PnV1ePdQFuiOjSXxiRpZx1Z3neFtxQQ/0Q96Dw5lq,manager," User",manager@example.com,9876543210,1995-02-01
