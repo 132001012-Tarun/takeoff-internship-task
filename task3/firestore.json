@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "agile-earth-391106",
+  "private_key_id": "83b8cf42e93d5cc281c1516f37a8dcb4dc7833e5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCaTt8XpDwbLBO6\nYCiEWefuisSI2SSdo+c+UrezBpj1sNpv6SW+W0ZNEceynE1mmGO2YJJADK8k9EmO\n/B7pXPEHr4WxoTaUJIRTcsycRtX9o/Cqv6MHPVw57FjQO7N6HAkYfIAoaDAFepLV\nQCd8cHtMlTP30o/aENasPRdo6QlUjsrDjqWSTjqdafyTrXg9uUV7IihrkZ66/gpi\nUJmtwxK/CiID2jXFYHjQRrPlAostaNBQBEQYsuWUshZmajc478QKQ4jl5671tFkb\nRh+e1nzwnZ6vrl25HWN8PXGSg9Y1Cv8LqD75LhIoAd9jy2ZwbD3e7/GPL4Zh462a\nCJu3QhIVAgMBAAECggEACjhdxP5sZLhUo4F+7X/ZlrkQ2fzX1Ku9wyj4tcjNahMe\nmfmX4GBslZTZ5ICUYnkxZtZFRCy9j6BbxuFNWCjUZgKVbksT3FgBflgaKTef22l3\npTeFdWig/80hohkc2Azx+pyJuHi+GtQgKYj9lIZhWZSAQ/0UPgiOJLZJzfmxU9ek\nMUOLPa1VRuajbRSe/maGMJO7dQDs07ox3tI6agieERSVsIAipjWObz2cE/UR+MnS\narCAzUpcZUNLvY5eGiGwjjcd/1E4bol+TYL655QxHFoNyuLwJbZwoL8Ie/T7XGCN\nPAOSutYvp0GLsh5Mm8ZqYogZeFnUwl5qJsunItjUQQKBgQDaGNvCjnEC45/vbzxg\n2YB29PZzWASXRAtQ44gOmcDkIJxvQbBJ4hrFdQPr8srmKIIIxDQ3eR0Nogp0DU9I\nKXlXGMVMnt6Iw4dfZ8r5P5EOWnc+thRNcr5ONdctENuDyHvXmlhr/QkY+dt3DR1m\nfcWzszncRHsF+mHLhVSzvcfCnQKBgQC1IAoalAJ5aZXbYdqTz/FKqjrh0PZ9f5PB\nftsvkc4KWJm6eruvMx16xSRPdjgUzwxB1aMZdAfsfnz0Rqid9QOJdFzrpll9p1kU\nfv6Q0AKXA0R76f0fnCD60paiiUcCuYyU/R5bgy/0GhEAcNOVlovpdhKPJrsexAg9\n20VE5JoX2QKBgQCVBIUrcz4edj8yTzPXDOXs4cV+3DYO0QxWUZEGQOH+PZYFosF8\nSgR2xFRQpE0kY6stqDnxaUyDoyM3VlzEdqoU67TrfGWa1tapRnb2RQus3f06GRjY\nLj1/nOQQQ8NpUNPlZe1io7rSmO3uc0SSYf9yoFQ5f4T7ea/WapyMT3CtNQKBgCNK\n5O0c3gaOXlbrEE4w/JFR7jtGHmGB1Gals0vnm0BE11+QvrV6vknH1DVvkansVjUV\nzbwN8eVRGEP46K4uqcvE0r5QIavsSd1GiY/qGDcYueVzSJE6OOrm0ddF7IJJaW02\njQ3D2Do2Qg3V7kR9mzGYgjFGmLt78ycqbKrp6GSxAoGBAJO9ttV4ciNti1ffUA/A\nnIwWmznHSXNVP04q09N8/gTRhQZ+gKXQVZNGHSAQlzrOxpGR1QGK6osLLHH2m0Uy\nHCcRQ4yFuqz+oPSH7tEk24NXyL59wZDVLKryZyfUq//GfA221IRJ3SU9SLpdh+Vh\nIw+rkrcnWRwtw0DZ3cekOHkD\n-----END PRIVATE KEY-----\n",
+  "client_email": "csv-to-firestore-service-a-242@agile-earth-391106.iam.gserviceaccount.com",
+  "client_id": "101405652720677255426",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/csv-to-firestore-service-a-242%40agile-earth-391106.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
